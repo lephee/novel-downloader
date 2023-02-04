@@ -276,3 +276,28 @@ export const dingdiann = () =>
     },
     5
   );
+
+export const hongyue8 = () =>
+    mkBiquge(
+        (introDom) => {
+            rms([/章节错误,点此报送(免注册), 报送后维护人员会在两分钟内校正章节内容,请耐心等待/g], introDom);
+            rm('a[href^="http://down.gebiqu.com"]', false, introDom);
+            return introDom;
+        },
+        (content) => {
+            rms([/"www.gebiqu.com"/g], content);
+            return content;
+        }
+    );
+
+export const xdingdian = () =>
+    mkBiquge(
+        (introDom) => {
+            rm2(["章节错误,点此举报", "https://www.xdingdian.cc"], introDom);
+            return introDom;
+        },
+        (content) => {
+            rms([/"www.gebiqu.com"/g], content);
+            return content;
+        }
+    );

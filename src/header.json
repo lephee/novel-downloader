@@ -231,7 +231,9 @@
     "*://www.yb3.cc/5200/*/",
     "*://hongxiuzhao.me/*.html",
     "*://www.mijiashe.com/*/",
-    "*://www.duread8.com/book/*"
+    "*://www.duread8.com/book/*",
+    "*://www.hongyue8.net/*/*",
+    "*://www.xdingdian.cc/*"
   ],
   "exclude": [
     "*://www.jjwxc.net/onebook.php?novelid=*&chapterid=*",

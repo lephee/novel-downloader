@@ -608,6 +608,16 @@ export async function getRule(): Promise<BaseRuleClass> {
       ruleClass = Duread;
       break;
     }
+    case "www.hongyue8.com": {
+      const { hongyue8 } = await import("../rules/biquge/onePage");
+      ruleClass = hongyue8();
+      break;
+    }
+    case "www.xdingdian.cc": {
+      const { xdingdian } = await import("../rules/biquge/onePage");
+      ruleClass = xdingdian();
+      break;
+    }
     default: {
       throw new Error("Not Found Rule!");
     }

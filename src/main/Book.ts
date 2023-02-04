@@ -24,7 +24,7 @@ export interface saveType {
 
 export class Book {
   public saveType: saveType = {
-    epub: true,
+    epub: false,
     txt: true,
     raw: false,
   };
